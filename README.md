@@ -1,7 +1,7 @@
 # DataError
 Defines a DataError exception class interface, subclassing ArgumentTypeError. 
 The class is an Abstract Factory. There are six method signatures. Three 
-signatures are public, and three are private.
+signatures are `public`, and three are `private`.
 
 ## Installation
 
@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 There are six total method signatures, all instance signatures. Three 
-signatures are public, and three are private.
+signatures are `public`, and three are `private`.
 
 ### Public methods
 The three public signatures are the constructor, `message()`, and 
@@ -38,15 +38,15 @@ In the case the object is a data type instance, and is an acceptable type,
 raises. Takes an unknown type object.
 
 ### Private methods
-The three private method signatures are message=(explanation), 
-choose(explanation), and type?(argument).
+The three `private` method signatures are `message=(explanation)`, 
+`choose(explanation)`, and `type?(presumed_data)`.
 
 #### `message=(explanation)`
 Setter method. Sets the message attribute the argued explanation 
 String.
 
 #### `choose(explanation)`
-Chooses the appropriate expiration. In the case no explanation String was 
+Chooses the appropriate explanation. In the case no explanation String was 
 argued, the default explanation is the explanation.
 
 #### `type?(presumed_data)`
@@ -63,7 +63,11 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/scientist8202/data_error. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at 
+https://github.com/scientist8202/data_error. This project is intended to be a 
+safe, welcoming space for collaboration, and contributors are expected to 
+adhere to the 
+[Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
