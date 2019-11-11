@@ -1,0 +1,24 @@
+PATH
+  remote: .
+  specs:
+    data_error (1.0.0)
+      argument_type_error
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    argument_type_error (1.0.0)
+    minitest (5.13.0)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.17)
+  data_error!
+  minitest (~> 5.0)
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.17.3
