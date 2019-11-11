@@ -1,4 +1,4 @@
-# DataError
+# DataError [![Gem Version](https://badge.fury.io/rb/data_error.svg)](https://badge.fury.io/rb/data_error) ![Gem](https://img.shields.io/gem/dt/data_error)
 Defines a DataError exception class interface, subclassing ArgumentTypeError. 
 The class is an Abstract Factory. There are six method signatures. Three 
 signatures are `public`, and three are `private`.
