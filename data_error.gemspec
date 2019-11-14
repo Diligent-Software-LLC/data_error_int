@@ -4,17 +4,15 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "data_error/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "data_error"
-  spec.version       = DataError::VERSION
-  spec.authors       = ["Bradley"]
-  spec.email         = ["bradleytannor@gmail.com", "Diligent Software LLC"]
+  spec.name    = "data_error"
+  spec.version = DataError::VERSION
+  spec.authors = ["Bradley J. Tannor"]
+  spec.email   = ["bradleytannor@gmail.com", "Diligent Software LLC"]
 
-  spec.summary       = %q{A DataError Abstract Factory interface class.}
-  spec.description   = %q{There
-are six total method signatures, all instance signatures. Three signatures are
-public, and three are private.}
-  spec.homepage      = "https://github.com/scientist8202/data_error"
-  spec.license       = "MIT"
+  spec.summary     = %q{A DataError Abstract Factory interface class.}
+  spec.description = %q{The update fixes architectural problems.}
+  spec.homepage    = "https://github.com/scientist8202/data_error"
+  spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.

@@ -1,7 +1,7 @@
 # DataError [![Gem Version](https://badge.fury.io/rb/data_error.svg)](https://badge.fury.io/rb/data_error) ![Gem](https://img.shields.io/gem/dt/data_error)
 Defines a DataError exception class interface, subclassing ArgumentTypeError. 
-The class is an Abstract Factory. There are six method signatures. Three 
-signatures are `public`, and three are `private`.
+The class is an Abstract Factory. There are four method signatures. Three 
+signatures are `public`, and one is `private`.
 
 ## Installation
 
@@ -20,12 +20,12 @@ Or install it yourself as:
     $ gem install data_error
 
 ## Usage
-There are six total method signatures, all instance signatures. Three 
-signatures are `public`, and three are `private`.
+There are four total method signatures, all instance signatures. Three 
+signatures are `public`, and one is `private`.
 
 ### Public methods
 The three public signatures are the constructor, `message()`, and 
-`try(argument_type)`.
+`raise_exception(argument_type)`.
 
 #### `initialize(message = nil)`
 The constructor.
@@ -33,25 +33,16 @@ The constructor.
 #### `message()`
 Getter method. Gets and returns the explanation.
 
-#### `try(argument_type)`
+#### `raise_exception(argument_type)`
 In the case the object is a data type instance, and is an acceptable type, 
 raises. Takes an unknown type object.
 
 ### Private methods
-The three `private` method signatures are `message=(explanation)`, 
-`choose(explanation)`, and `type?(presumed_data)`.
+The `private` method signature is `message=(explanation)`.
 
 #### `message=(explanation)`
 Setter method. Sets the message attribute the argued explanation 
 String.
-
-#### `choose(explanation)`
-Chooses the appropriate explanation. In the case no explanation String was 
-argued, the default explanation is the explanation.
-
-#### `type?(presumed_data)`
-Boolean method. Returns true in the case the argument is the appropriate type, 
-and returns false otherwise.
 
 ## Development
 

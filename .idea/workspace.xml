@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2d0d39b9-c071-4145-87bd-3ce97ec0100b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_error.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/data_error.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data_error.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_error.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data_error/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_error/version.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +52,8 @@
       <updated>1573437309928</updated>
       <workItem from="1573437313378" duration="1715000" />
       <workItem from="1573441467778" duration="1328000" />
-      <workItem from="1573494591986" duration="1126000" />
+      <workItem from="1573494591986" duration="1224000" />
+      <workItem from="1573696742074" duration="372000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository.">
       <created>1573439009349</created>
@@ -72,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573495171211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added badges.">
+      <created>1573495762890</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573495762891</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,7 +105,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialized repository." />
     <MESSAGE value="Wrote README." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote README." />
+    <MESSAGE value="Added badges." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added badges." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
