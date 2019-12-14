@@ -1,14 +1,14 @@
 # DataError [![Gem Version](https://badge.fury.io/rb/data_error.svg)](https://badge.fury.io/rb/data_error) ![Gem](https://img.shields.io/gem/dt/data_error)
 Defines a DataError exception class interface, subclassing ArgumentTypeError. 
-The class is an Abstract Factory. There are four method signatures. Three 
-signatures are `public`, and one is `private`.
+There are five method signatures. Four signatures are `public`, and one is 
+`private`. One `public` signature is also a class method.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'data_error'
+gem 'data_error', '~> 1.1.0'
 ```
 
 And then execute:
@@ -17,15 +17,19 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install data_error
+    $ gem install data_error -v 1.1.0
 
 ## Usage
-There are four total method signatures, all instance signatures. Three 
-signatures are `public`, and one is `private`.
+There are five total method signatures. Four are instance signatures, and one 
+is a class signature. Four signatures are `public`, and one is `private`.
 
 ### Public methods
-The three public signatures are the constructor, `message()`, and 
-`raise_exception(argument_type)`.
+The four public signatures are `self.acceptable?(argument_value)`, the 
+constructor, `message()`, and `raise_exception(argument_type)`.
+
+#### `self.acceptable?(argument_value)`
+Class method. Verifies an object is an acceptable data type. Returns true in 
+the case the argument is acceptable data, and false otherwise.
 
 #### `initialize(message = nil)`
 The constructor.

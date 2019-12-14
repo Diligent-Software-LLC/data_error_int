@@ -5,6 +5,14 @@ require "data_error/version"
 
 class DataError < ArgumentTypeError
 
+  # self.acceptable?(argument_value).
+  # @abstract:
+  # Class method. Verifies an object is an acceptable data type.
+  # @return: true in the case the argument is acceptable data, and false
+  # otherwise.
+  def self.acceptable?(argument_value)
+  end
+
   # initialize(message = nil)
   # @abstract:
   # The constructor.

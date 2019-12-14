@@ -10,7 +10,10 @@ Gem::Specification.new do |spec|
   spec.email   = ["bradleytannor@gmail.com", "Diligent Software LLC"]
 
   spec.summary     = %q{A DataError Abstract Factory interface class.}
-  spec.description = %q{The update fixes architectural problems.}
+  spec.description = %q{Defines a DataError exception class interface,
+subclassing ArgumentTypeError. There are fix method signatures. Four
+signatures are public, and one is private. One signature is also a class
+method.}
   spec.homepage    = "https://github.com/scientist8202/data_error"
   spec.license     = "MIT"
 
@@ -40,5 +43,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
 
-  spec.add_dependency "argument_type_error"
+  spec.add_dependency "argument_type_error", "~> 1.0.1"
+
 end
