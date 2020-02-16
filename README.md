@@ -8,7 +8,7 @@ There are five method signatures. Four signatures are `public`, and one is
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'data_error', '~> 1.1.0'
+gem 'data_error', '~> 1.1.1'
 ```
 
 And then execute:
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install data_error -v 1.1.0
+    $ gem install data_error -v 1.1.1
 
 ## Usage
 There are five total method signatures. Four are instance signatures, and one 
@@ -59,7 +59,8 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at 
-https://github.com/scientist8202/data_error. This project is intended to be a 
+https://github.com/Diligent-Software-LLC/data_error. This project is intended to
+ be a 
 safe, welcoming space for collaboration, and contributors are expected to 
 adhere to the 
 [Contributor Covenant](http://contributor-covenant.org) code of conduct.
@@ -73,4 +74,4 @@ The gem is available as open source under the terms of the
 
 Everyone interacting in the DataError project’s codebases, issue trackers, 
 chat rooms and mailing lists is expected to follow the 
-[code of conduct](https://github.com/[USERNAME]/data_error/blob/master/CODE_OF_CONDUCT.md).
+[code of conduct](https://github.com/Diligent-Software-LLC/data_error/blob/master/CODE_OF_CONDUCT.md).

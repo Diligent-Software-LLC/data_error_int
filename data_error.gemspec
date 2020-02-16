@@ -9,12 +9,13 @@ Gem::Specification.new do |spec|
   spec.authors = ["Bradley J. Tannor"]
   spec.email   = ["bradleytannor@gmail.com", "Diligent Software LLC"]
 
-  spec.summary     = %q{A DataError Abstract Factory interface class.}
-  spec.description = %q{Defines a DataError exception class interface,
+  spec.summary     = %q{A DataError Abstract Base and interface class.}
+  spec.description = %q{Defines a DataError exception interface and Abstract
+Base class,
 subclassing ArgumentTypeError. There are fix method signatures. Four
 signatures are public, and one is private. One signature is also a class
 method.}
-  spec.homepage    = "https://github.com/scientist8202/data_error"
+  spec.homepage    = "https://github.com/Diligent-Software-LLC/data_error"
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -39,10 +40,11 @@ method.}
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.17"
+  spec.add_development_dependency "bundler", "~> 2.1.2"
+  spec.add_development_dependency "simplecov", "~> 0.17.1"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
 
-  spec.add_dependency "argument_type_error", "~> 1.0.1"
+  spec.add_dependency "argument_type_error", "~> 1.0.2"
 
 end
