@@ -45,6 +45,6 @@ method.}
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"
 
-  spec.add_dependency "argument_type_error", "~> 1.0.2"
+  spec.add_dependency "argument_type_error", "~> 1.0.3"
 
 end

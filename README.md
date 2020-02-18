@@ -8,7 +8,7 @@ There are five method signatures. Four signatures are `public`, and one is
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'data_error', '~> 1.1.1'
+gem "data_error", "~> 1.1.1"
 ```
 
 And then execute:
