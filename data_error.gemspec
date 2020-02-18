@@ -5,7 +5,7 @@ VERSION = "1.1.2"
 
 Gem::Specification.new do |spec|
   spec.name    = "data_error"
-  spec.version = ::VERSION
+  spec.version = VERSION
   spec.authors = ["Bradley J. Tannor"]
   spec.email   = ["bradleytannor@gmail.com", "Diligent Software LLC"]
 
