@@ -5,6 +5,7 @@ require "argument_type_error"
 
 class DataError < ArgumentTypeError
 
-  VERSION = ::VERSION
+  #VERSION = ::VERSION
+  VERSION = "1.1.1"
 
 end

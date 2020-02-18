@@ -1,11 +1,11 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-
-VERSION = "1.1.1"
+require "data_error/version"
+#VERSION = "1.1.1"
 
 Gem::Specification.new do |spec|
   spec.name    = "data_error"
-  spec.version = VERSION
+  spec.version = DataError::VERSION
   spec.authors = ["Bradley J. Tannor"]
   spec.email   = ["bradleytannor@gmail.com", "Diligent Software LLC"]
 
