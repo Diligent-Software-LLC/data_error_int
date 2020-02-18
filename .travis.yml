@@ -4,4 +4,4 @@ language: ruby
 cache: bundler
 rvm:
   - 2.6.5
-install: bundle install
+before-install: bundle install
