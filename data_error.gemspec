@@ -1,7 +1,7 @@
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-VERSION = "1.1.1"
+VERSION = "1.1.2"
 
 Gem::Specification.new do |spec|
   spec.name    = "data_error"
