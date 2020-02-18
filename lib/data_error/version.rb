@@ -5,4 +5,6 @@ require "argument_type_error"
 
 class DataError < ArgumentTypeError
 
+  VERSION = ::VERSION
+
 end

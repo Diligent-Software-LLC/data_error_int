@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d0d39b9-c071-4145-87bd-3ce97ec0100b" name="Default Changelist" comment="Modified Version Syntax.&#10;&#10;Moved version constant and removed require.">
+    <list default="true" id="2d0d39b9-c071-4145-87bd-3ce97ec0100b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_error.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/data_error.gemspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data_error/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_error/version.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +99,7 @@
       <workItem from="1573698493711" duration="51000" />
       <workItem from="1576281232954" duration="1391000" />
       <workItem from="1581817906842" duration="5040000" />
-      <workItem from="1581983459519" duration="4139000" />
+      <workItem from="1581983459519" duration="4880000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository.">
       <created>1573439009349</created>
@@ -166,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582050271983</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Modified Version Syntax.&#10;&#10;Moved version constant and removed require.">
+      <created>1582053459811</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1582053459811</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +199,8 @@
     <MESSAGE value="v1.1.1 Ready.&#10;&#10;Updated the README, copyright statements, travis configuration, gemspec, and dependencies." />
     <MESSAGE value="Updated Dependencies.&#10;&#10;Preparing v1.1.2. Updated the argument_type_error dependency." />
     <MESSAGE value="Edited Travis CI Configuration.&#10;&#10;Preparing v1.1.2. Removed before_install." />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited Travis CI Configuration.&#10;&#10;Preparing v1.1.2. Removed before_install." />
+    <MESSAGE value="Modified Version Syntax.&#10;&#10;Moved version constant and removed require." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified Version Syntax.&#10;&#10;Moved version constant and removed require." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -202,10 +208,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="485" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.975@0.23.1680.975" timestamp="1582046514662" />
-    <state x="532" y="112" key="CommitChangelistDialog2" timestamp="1582053417303">
+    <state x="532" y="112" key="CommitChangelistDialog2" timestamp="1582053459481">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="532" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1582053417303" />
+    <state x="532" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1582053459481" />
     <state width="1413" height="270" key="GridCell.Tab.0.bottom" timestamp="1582053358453">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
@@ -226,10 +232,10 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="300" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1581983497249" />
-    <state x="538" y="250" key="Vcs.Push.Dialog.v2" timestamp="1582053373246">
+    <state x="538" y="250" key="Vcs.Push.Dialog.v2" timestamp="1582053466352">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="538" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1582053373246" />
+    <state x="538" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1582053466352" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/data_error@DataErrorTest.rcov" NAME="DataErrorTest Coverage Results" MODIFIED="1582052612747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="data_error" />
