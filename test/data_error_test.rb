@@ -9,6 +9,8 @@ class DataErrorTest < Minitest::Test
     @plain_fixture       = DataError.new()
     @data_error_constant = DataError
     @acceptable_types    = DataError::ACCEPTABLE_CORE_TYPES
+    @default_message     = DataError::DEFAULT_MESSAGE
+    @interface           = DataError::INTERFACE
   end
 
   # test_that_it_has_a_version_number().
@@ -63,17 +65,34 @@ class DataErrorTest < Minitest::Test
   # Bignum, Fixnum, NilClass, Symbol, and Time.
   def test_acceptable_types()
 
-    assert(@acceptable_types.include?(:Complex))
-    assert(@acceptable_types.include?(:Float))
-    assert(@acceptable_types.include?(:Integer))
-    assert(@acceptable_types.include?(:Rational))
-    assert(@acceptable_types.include?(:String))
-    assert(@acceptable_types.include?(:Bignum))
-    assert(@acceptable_types.include?(:Fixnum))
-    assert(@acceptable_types.include?(:NilClass))
-    assert(@acceptable_types.include?(:Symbol))
-    assert(@acceptable_types.include?(:Time))
+    assert_includes(@acceptable_types, 'Numeric')
+    assert_includes(@acceptable_types, 'FalseClass')
+    assert_includes(@acceptable_types, 'TrueClass')
+    assert_includes(@acceptable_types, 'Symbol')
+    assert_includes(@acceptable_types, 'String')
+    assert_includes(@acceptable_types, 'Time')
 
+  end
+
+  # test_default_message_declared().
+  # @abstract
+  # The DEFAULT_MESSAGE constant was declared.
+  def test_default_message_declared()
+    assert(@data_error_constant.const_defined?('DEFAULT_MESSAGE'))
+  end
+
+  # test_interface_was_declared().
+  # @abstract
+  # INTERFACE was declared.
+  def test_interface_was_declared()
+    assert(@data_error_constant.const_defined?('INTERFACE'))
+  end
+
+  # test_interface_is_class().
+  # @abstract
+  # The interface constant is DataError.
+  def test_interface_is_class()
+    assert_same(@interface, @data_error_constant)
   end
 
 end

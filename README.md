@@ -41,8 +41,8 @@ FalseClass, TrueClass, Symbol, String, and Time.
 
 * DEFAULT_MESSAGE
 
-A default explanation string. The default is "The argument was neither a 
-Complex, Float, Integer, Rational , String, Bignum, Fixnum, NilClass, Symbol, or Time object."
+A default explanation string. The default is "The argument was neither a Numeric, FalseClass,
+                                              TrueClass, Symbol, String, or Time object."
 
 * INTERFACE
 
@@ -57,7 +57,7 @@ The default message explaining a raised exception.
 ### Public methods
 
 The four public signatures are `self.acceptable?(unkonwn_argument)`, 
-`initialize(message = nil)` (constructor), `message()`, and
+`initialize(message = DEFAULT_MESSAGE)` (constructor), `message()`, and
 `raise_exception(argued_object)`.
 
 #### `self.acceptable?(unknown_argument)`
@@ -65,7 +65,7 @@ The four public signatures are `self.acceptable?(unkonwn_argument)`,
 Class method. Verifies an object is an acceptable data type. Returns true in 
 the case the argument is acceptable data, and false otherwise.
 
-#### `initialize(message = nil)`
+#### `initialize(message = DEFAULT_MESSAGE)`
 
 The constructor. Takes a String argument, message, explaining the default
  message raised in STDERR.

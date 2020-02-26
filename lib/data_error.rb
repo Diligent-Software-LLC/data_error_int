@@ -8,8 +8,14 @@ require 'data_error/version'
 # A DataError interface and Abstract Base Class.
 class DataError < ArgumentTypeError
 
-  ACCEPTABLE_CORE_TYPES = [:Complex, :Float, :Integer, :Rational, :String,
-                           :Bignum, :Fixnum, :NilClass, :Symbol, :Time].freeze()
+  ACCEPTABLE_CORE_TYPES = ['Numeric', 'FalseClass', 'TrueClass', 'Symbol',
+                           'String', 'Time']
+                              .freeze()
+
+  DEFAULT_MESSAGE = "The argument was neither a Numeric, FalseClass,
+TrueClass, Symbol, String, or Time object."
+
+  INTERFACE = self
 
   # self.acceptable?(unknown_argument).
   # @abstract:
@@ -20,11 +26,11 @@ class DataError < ArgumentTypeError
   def self.acceptable?(unknown_argument)
   end
 
-  # initialize(message = nil).
+  # initialize(message = DEFAULT_MESSAGE).
   # @abstract:
   # The constructor.
   # @param [String] message: the message explaining the future raised exception.
-  def initialize(message = nil)
+  def initialize(message = DEFAULT_MESSAGE)
   end
 
   # message().
