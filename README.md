@@ -6,7 +6,7 @@ Defines a DataError exception class interface.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'data_error', '~> 1.1.3'
+gem 'data_error', '~> 1.1.4'
 ```
 
 And then execute:
@@ -110,5 +110,6 @@ Everyone interacting in the DataError project’s codebases, issue trackers, cha
 
 ## License
 
-The gem is available as open source under the terms of the 
+Copyright (C) 2020 Diligent Software LLC. All rights reserved. The gem is
+ available as open source under the terms of the 
 [MIT License](https://opensource.org/licenses/MIT).
