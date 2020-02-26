@@ -13,7 +13,7 @@ class DataError < ArgumentTypeError
                               .freeze()
 
   DEFAULT_MESSAGE = "The argument was neither a Numeric, FalseClass,
-TrueClass, Symbol, String, or Time object."
+TrueClass, Symbol, String, or Time object.".freeze
 
   INTERFACE = self
 
