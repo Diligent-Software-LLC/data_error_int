@@ -4,16 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d0d39b9-c071-4145-87bd-3ce97ec0100b" name="Default Changelist" comment="Travis CI All Pass.&#10;&#10;Probing bug.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/data_error.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_error.iml" afterDir="false" />
+    <list default="true" id="2d0d39b9-c071-4145-87bd-3ce97ec0100b" name="Default Changelist" comment="Adjusted the Travis Configuration and README.&#10;&#10;The .travis.yml was missing the skip_cleanup line,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_error.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/data_error.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data_error.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_error.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data_error/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data_error/version.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data_error_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/data_error_test.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +20,11 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -44,6 +43,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/artifacts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="DataErrorTest" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
@@ -112,7 +116,8 @@
       <workItem from="1576281232954" duration="1391000" />
       <workItem from="1581817906842" duration="5040000" />
       <workItem from="1581983459519" duration="7045000" />
-      <workItem from="1582324729963" duration="11884000" />
+      <workItem from="1582324729963" duration="18424000" />
+      <workItem from="1582724006556" duration="3008000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized repository.">
       <created>1573439009349</created>
@@ -226,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582056120304</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="All Local Tests Pass.&#10;&#10;Added tests, reformatted documentation, and reorganized code.">
+      <created>1582403328904</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1582403328904</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +269,8 @@
     <MESSAGE value="Modified Version Syntax.&#10;&#10;Moved version constant and removed require." />
     <MESSAGE value="Persistent Require Issues.&#10;&#10;Requiring bugs." />
     <MESSAGE value="Travis CI All Pass.&#10;&#10;Probing bug." />
-    <option name="LAST_COMMIT_MESSAGE" value="Travis CI All Pass.&#10;&#10;Probing bug." />
+    <MESSAGE value="All Local Tests Pass.&#10;&#10;Added tests, reformatted documentation, and reorganized code." />
+    <option name="LAST_COMMIT_MESSAGE" value="All Local Tests Pass.&#10;&#10;Added tests, reformatted documentation, and reorganized code." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -273,34 +286,38 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="583" y="373" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.975@0.23.1680.975" timestamp="1582401322873" />
-    <state x="532" y="112" key="CommitChangelistDialog2" timestamp="1582403113968">
+    <state x="255" y="112" width="1089" height="831" key="CommitChangelistDialog2" timestamp="1582737193910">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="532" y="112" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1582403113968" />
-    <state width="1413" height="270" key="GridCell.Tab.0.bottom" timestamp="1582402945086">
+    <state x="255" y="112" width="1089" height="831" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1582737193910" />
+    <state width="1413" height="270" key="GridCell.Tab.0.bottom" timestamp="1582405526157">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1582402945086" />
-    <state width="1413" height="270" key="GridCell.Tab.0.center" timestamp="1582402945086">
+    <state width="1413" height="270" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1582405526157" />
+    <state width="1413" height="270" key="GridCell.Tab.0.center" timestamp="1582405526156">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1582402945086" />
-    <state width="1413" height="270" key="GridCell.Tab.0.left" timestamp="1582402945085">
+    <state width="1413" height="270" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1582405526156" />
+    <state width="1413" height="270" key="GridCell.Tab.0.left" timestamp="1582405526155">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1582402945085" />
-    <state width="1413" height="270" key="GridCell.Tab.0.right" timestamp="1582402945086">
+    <state width="1413" height="270" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1582405526155" />
+    <state width="1413" height="270" key="GridCell.Tab.0.right" timestamp="1582405526156">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1413" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1582402945086" />
-    <state x="300" y="149" key="SettingsEditor" timestamp="1582402395320">
+    <state width="1413" height="270" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1582405526156" />
+    <state x="300" y="149" key="SettingsEditor" timestamp="1582405038924">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="300" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1582402395320" />
-    <state x="538" y="250" key="Vcs.Push.Dialog.v2" timestamp="1582056139446">
+    <state x="300" y="149" key="SettingsEditor/0.23.1680.975@0.23.1680.975" timestamp="1582405038924" />
+    <state x="538" y="250" key="Vcs.Push.Dialog.v2" timestamp="1582405664455">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="538" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1582056139446" />
+    <state x="538" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1582405664455" />
+    <state x="1259" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582403593490">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="1259" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.975@0.23.1680.975" timestamp="1582403593490" />
     <state x="477" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1582399901910">
       <screen x="0" y="23" width="1680" height="975" />
     </state>

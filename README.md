@@ -6,7 +6,7 @@ Defines a DataError exception class interface.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "data_error", "~> 1.1.3"
+gem 'data_error', '~> 1.1.3'
 ```
 
 And then execute:
@@ -30,14 +30,35 @@ extensions to the MAJOR.MINOR.PATCH format."
 
 ## Usage
 
+
+
+### Constants
+
+* ACCEPTABLE_CORE_TYPES
+
+An array containing stringified class names. The acceptable types are Numeric, 
+FalseClass, TrueClass, Symbol, String, and Time.
+
+* DEFAULT_MESSAGE
+
+A default explanation string. The default is "The argument was neither a 
+Complex, Float, Integer, Rational , String, Bignum, Fixnum, NilClass, Symbol, or Time object."
+
+* INTERFACE
+
+DataError.
+
 ### Attributes
 
-- [String] message: the default message explaining a raised exception. 
+* [String] message 
+
+The default message explaining a raised exception. 
 
 ### Public methods
 
-The four public signatures are `self.acceptable?(unkonwn_argument)`, the 
-constructor, `message()`, and `raise_exception(argued_object)`.
+The four public signatures are `self.acceptable?(unkonwn_argument)`, 
+`initialize(message = nil)` (constructor), `message()`, and
+`raise_exception(argued_object)`.
 
 #### `self.acceptable?(unknown_argument)`
 
@@ -76,10 +97,11 @@ expected to adhere to the [Contributor Covenant](http://contributor-covenant.org
 
 ### Code Format
 
+Use the [Ruby Style Guide](https://rubystyle.guide).
+
 ### Code of Conduct
 
-Everyone interacting in the DataError project’s codebases
-, issue trackers, chat rooms and mailing lists is expected to follow the
+Everyone interacting in the DataError project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the
  [code of conduct](https://github.com/Diligent-Software-LLC/data_error/blob/master/CODE_OF_CONDUCT.md).
 
 ### Bug reports
