@@ -71,6 +71,7 @@ class DataErrorTest < Minitest::Test
     assert_includes(@acceptable_types, 'Symbol')
     assert_includes(@acceptable_types, 'String')
     assert_includes(@acceptable_types, 'Time')
+    assert_includes(@acceptable_types, 'NilClass')
 
   end
 

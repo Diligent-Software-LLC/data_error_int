@@ -6,14 +6,14 @@ require 'data_error/version'
 # DataError.
 # @abstract:
 # A DataError interface and Abstract Base Class.
-class DataError < ArgumentTypeError
+class DataError < TypeError
 
   ACCEPTABLE_CORE_TYPES = ['Numeric', 'FalseClass', 'TrueClass', 'Symbol',
-                           'String', 'Time']
+                           'String', 'Time', 'NilClass']
                               .freeze()
 
   DEFAULT_MESSAGE = "The argument was neither a Numeric, FalseClass,
-TrueClass, Symbol, String, or Time object.".freeze
+TrueClass, Symbol, String, Time, or NilClass object.".freeze
 
   INTERFACE = self
 

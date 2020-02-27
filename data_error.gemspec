@@ -1,7 +1,7 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-VERSION = '1.1.4'.freeze
+VERSION = '1.1.5'.freeze
 
 Gem::Specification.new do |spec|
 
@@ -12,8 +12,9 @@ Gem::Specification.new do |spec|
 
   spec.summary     = %q(A DataError Abstract Base and interface class.)
   spec.description           = %q(Defines a DataError exception interface and Abstract
-Base class, subclassing ArgumentTypeError. Unacceptable core data types are
-all types other than Numeric, FalseClass, TrueClass, Symbol, String, and Time.)
+Base class, subclassing TypeError. Unacceptable core data types are
+all types other than Numeric, FalseClass, TrueClass, Symbol, String, Time,
+and NilClass.)
 
   spec.homepage = 'https://github.com/Diligent-Software-LLC/data_error'
   spec.license  = 'MIT'
@@ -32,7 +33,5 @@ all types other than Numeric, FalseClass, TrueClass, Symbol, String, and Time.)
   spec.add_development_dependency 'minitest', '~> 5.0'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'simplecov', '~> 0.17.1'
-
-  spec.add_runtime_dependency 'argument_type_error', '~> 1.0.3'
 
 end

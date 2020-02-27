@@ -1,12 +1,13 @@
 # DataError [![Gem Version](https://badge.fury.io/rb/data_error.svg)](https://badge.fury.io/rb/data_error) ![Gem](https://img.shields.io/gem/dt/data_error) ![Travis (.com) branch](https://img.shields.io/travis/com/Diligent-Software-LLC/data_error/master)
-Defines a DataError exception class interface.
+
+Defines a DataError exception class interface. Subclasses TypeError.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'data_error', '~> 1.1.4'
+gem 'data_error', '~> 1.1.5'
 ```
 
 And then execute:
@@ -26,7 +27,7 @@ The gem abides the [Semantic Versioning](https://www.semver.org) system:
 Additional labels for pre-release and build metadata are available as
 extensions to the MAJOR.MINOR.PATCH format."
 
-**All versions 0.0.x, where x is a natural number, are unstable or incomplete.**
+**All versions <= 1.1.5 are unstable or incomplete.**
 
 ## Usage
 
@@ -37,12 +38,12 @@ extensions to the MAJOR.MINOR.PATCH format."
 * ACCEPTABLE_CORE_TYPES
 
 An array containing stringified class names. The acceptable types are Numeric, 
-FalseClass, TrueClass, Symbol, String, and Time.
+FalseClass, TrueClass, Symbol, String, Time, and NilClass.
 
 * DEFAULT_MESSAGE
 
 A default explanation string. The default is "The argument was neither a Numeric, FalseClass,
-                                              TrueClass, Symbol, String, or Time object."
+TrueClass, Symbol, String, Time, or NilClass object."
 
 * INTERFACE
 
