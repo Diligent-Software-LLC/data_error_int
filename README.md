@@ -27,31 +27,32 @@ The gem abides the [Semantic Versioning](https://www.semver.org) system:
 Additional labels for pre-release and build metadata are available as
 extensions to the MAJOR.MINOR.PATCH format."
 
-**All versions <= 1.1.5 are unstable or incomplete.**
+**All versions <= 1.1.4 are unstable or incomplete.** If a previous version was 
+installed, update the gem:
 
-## Usage
+    $ gem update data_error
 
-
+## Source code documentation
 
 ### Constants
 
-* ACCEPTABLE_CORE_TYPES
+* `ACCEPTABLE_CORE_TYPES`
 
 An array containing stringified class names. The acceptable types are Numeric, 
 FalseClass, TrueClass, Symbol, String, Time, and NilClass.
 
-* DEFAULT_MESSAGE
+* `DEFAULT_MESSAGE`
 
 A default explanation string. The default is "The argument was neither a Numeric, FalseClass,
 TrueClass, Symbol, String, Time, or NilClass object."
 
-* INTERFACE
+* `INTERFACE`
 
 DataError.
 
 ### Attributes
 
-* [String] message 
+* [String] `message` 
 
 The default message explaining a raised exception. 
 
@@ -107,7 +108,12 @@ Everyone interacting in the DataError project’s codebases, issue trackers, cha
 
 ### Bug reports
 
+Create an issue describing the anomaly. Label the issue a bug. 
+
 ### Pull requests
+
+Bug fixes and improvements are welcome. Create an issue and describe the solution. Verify the 
+code passes all tests.
 
 ## License
 
