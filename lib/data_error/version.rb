@@ -6,6 +6,6 @@
 # A DataError interface and Abstract Base Class.
 class DataError < TypeError
 
-  VERSION = ::VERSION
+  VERSION = '1.1.6'.freeze()
 
 end

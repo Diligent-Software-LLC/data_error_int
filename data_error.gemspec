@@ -1,23 +1,23 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-VERSION = '1.1.5'.freeze
+require_relative 'lib/data_error/version'
 
 Gem::Specification.new do |spec|
 
   spec.name    = 'data_error'
-  spec.version = VERSION
-  spec.authors               = ['Bradley J. Tannor', 'Diligent Software LLC']
-  spec.email   = ['bradleytannor@gmail.com', 'Diligent Software LLC']
+  spec.version = DataError::VERSION
+  spec.authors = ['Bradley J. Tannor', 'Diligent Software LLC']
+  spec.email   = ['bradleytannor@gmail.com']
 
   spec.summary     = %q(A DataError Abstract Base and interface class.)
-  spec.description           = %q(Defines a DataError exception interface and Abstract
+  spec.description = %q(Defines a DataError exception interface and Abstract
 Base class, subclassing TypeError. Unacceptable core data types are
 all types other than Numeric, FalseClass, TrueClass, Symbol, String, Time,
 and NilClass.)
 
-  spec.homepage = 'https://github.com/Diligent-Software-LLC/data_error'
-  spec.license  = 'MIT'
+  spec.homepage              = 'https://github.com/Diligent-Software-LLC/data_error'
+  spec.license               = 'MIT'
   spec.required_ruby_version = '>= 2.6.5'
 
   # Specify which files should be added to the gem when it is released.
