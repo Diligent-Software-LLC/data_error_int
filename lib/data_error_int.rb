@@ -1,22 +1,21 @@
 # Copyright (C) 2020 Diligent Software LLC. All rights reserved. Released
-# under the MIT License.
-
-require_relative 'data_error_int/version'
+# under the GNU General Public License, Version 3. Refer LICENSE.txt.
 
 # DataErrorInt.
 # @abstract
+# @class_description
 #   A DataError exception class interface.
+# @attr message [String]
+#   An error explanation.
 class DataErrorInt < TypeError
 
-  ACCEPTABLE_TYPES = ['Numeric', 'FalseClass', 'TrueClass', 'Symbol',
-                      'String', 'Time', 'NilClass'].freeze()
-  DEFAULT_MESSAGE  = "The argument was neither a Numeric, FalseClass, " +
-      "TrueClass, Symbol, String, Time, or NilClass object.".freeze()
+  DEFAULT_MESSAGE = "The argument was neither a Numeric, FalseClass, " +
+      "TrueClass, Symbol, or NilClass object.".freeze()
 
   # initialize(message = DEFAULT_MESSAGE).
-  # @abstract
-  #   Constructor. Initializes an error object.
-  # @param [String] message
+  # @description
+  #   Initializes an error.
+  # @param message [String]
   #   An error explanation. Defaults the default message.
   # @return [DataError]
   #   The error instance.
@@ -24,21 +23,22 @@ class DataErrorInt < TypeError
   end
 
   # message().
-  # @abstract
-  #   Gets the error message.
-  # @return [String] message
-  #   The error message.
+  # @description
+  #   Gets message.
+  # @return [String]
+  #   The error message reference.
   def message()
   end
 
   private
 
   # message=(explanation = nil).
-  # @abstract
-  #   Sets the error's message.
-  # @param [String] explanation
-  #   The error message. In the case the explanation is not a String
-  # instance, raises an ArgumentError.
+  # @description
+  #   Sets message.
+  # @param explanation [String]
+  #   The error message.
+  # @raise [ArgumentError]
+  #   In the case the explanation is not a String instance.
   def message=(explanation = nil)
   end
 

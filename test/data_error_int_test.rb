@@ -1,55 +1,62 @@
 require_relative 'test_helper'
 
 # DataErrorIntTest.
-# @abstract
+# @class_description
 #   Tests the DataError interface.
 class DataErrorIntTest < Minitest::Test
 
+  # Constants
+  CLASS = DataErrorInt
+
   # test_conf_doc_f_ex().
-  # @abstract
-  #   The .travis.yml, CODE_OF_CONDUCT.md, Gemfile, LICENSE.txt, and
-  #   README.md files exist.
+  # @description
+  #   The .travis.yml, CODE_OF_CONDUCT.md, Gemfile, LICENSE.txt, README.md,
+  #   .yardopts files exist.
   def test_conf_doc_f_ex()
+
     assert_path_exists('.travis.yml')
     assert_path_exists('CODE_OF_CONDUCT.md')
     assert_path_exists('Gemfile')
     assert_path_exists('LICENSE.txt')
     assert_path_exists('README.md')
+    assert_path_exists('.yardopts')
+
   end
 
-  # test_that_it_has_a_version_number().
-  # @abstract:
+  # test_version_declared().
+  # @description
   #   version.rb defined a version number.
-  def test_that_it_has_a_version_number()
-    refute_nil ::DataErrorInt::VERSION
+  def test_version_declared()
+    refute_nil(CLASS::VERSION)
   end
 
   # setup().
-  # @abstract:
+  # @description
   #   Set fixtures.
   def setup()
-    @plain = DataErrorInt.new()
+    @plain = CLASS.new()
   end
 
   # test_constants_declared().
-  # @abstract
-  #   DEFAULT_MESSAGE and ACCEPTABLE_TYPES were defined.
+  # @description
+  #   DEFAULT_MESSAGE was defined.
   def test_constants_declared()
-    refute_nil(::DataErrorInt::ACCEPTABLE_TYPES)
-    refute_nil(::DataErrorInt::DEFAULT_MESSAGE)
+    refute_nil(CLASS::DEFAULT_MESSAGE)
   end
 
   # test_methods_declared().
-  # @abstract
+  # @description
   #   The initialize, message, and message= methods were declared.
   def test_methods_declared()
-    assert_respond_to(DataErrorInt, 'new')
+
+    assert_respond_to(CLASS, 'new')
     assert_respond_to(@plain, 'message')
     assert_includes(@plain.private_methods(), :message=)
+
   end
 
   # teardown().
-  # @abstract
+  # @description
   #   Cleans memory.
   def teardown()
   end
